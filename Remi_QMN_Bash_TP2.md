@@ -59,3 +59,8 @@ Voici mon script :
 >         echo "Votre mot de passe est incorrect"
 > fi
 
+## Exercice 3. Expressions rationnelles
+
+#### Ecrivez un script qui prend un paramètre et utilise la fonction suivante pour vérifier que ce paramètre est un nombre réel :
+
+
