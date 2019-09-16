@@ -3,8 +3,8 @@
 ## Exercice 1. Variables d’environnement
 
 
-### 1. Dans quels dossiers bash trouve-t-il les commandes tapées par l’utilisateur ?
-
+#### 1. Dans quels dossiers bash trouve-t-il les commandes tapées par l’utilisateur ?
+grace à la commande `printenv`,elle indique à bash où trouver les commandes tapées par l’utilisateur.
 #### 2. Quelle variable d’environnement permet à la commande cd tapée sans argument de vous ramener dans votre répertoire personnel ?
 
 #### 3. Explicitez le rôle des variables LANG, PWD, OLDPWD, SHELL et _.
