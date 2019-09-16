@@ -43,4 +43,19 @@ Pour ecrire la commande $HOME = chemin, il va falloir rentrer la commande `echo 
 
 #### Écrivez un script testpwd.sh qui demande de saisir un mot de passe et vérifie s’il correspond ou non au contenu d’une variable PASSWORD dont le contenu est codé en dur dans le script. Le mot de passe saisi par l’utilisateur ne doit pas s’afficher.
 
+Voici mon script : 
+
+> #!/bin/bash
+>
+> GoodPasswd="123+azer"
+>
+> read -s -p 'Veuillez rentrer votre mot de passe :' passwd
+>
+> if [ "$passwd" = "$GoodPasswd" ]; then
+>
+>         echo "Votre mot de passe est bon"
+> else
+>
+>         echo "Votre mot de passe est incorrect"
+> fi
 
