@@ -63,4 +63,31 @@ Voici mon script :
 
 #### Ecrivez un script qui prend un paramètre et utilise la fonction suivante pour vérifier que ce paramètre est un nombre réel :
 
-
+> #!/bin/bash
+>
+> function is_number()
+> {
+> 
+> re='^[+-]?[0-9]+([.][0-9]+)?$'
+> 
+> if ! [[ $1 =~ $re ]] ; then
+>         return 1
+> 
+> else
+> 
+>        return 0
+> fi
+> 
+> }
+> 
+> is_number $1
+> 
+> 
+> if [ $? -eq 0 ]; then
+> 
+>         echo "le nombre est réel "
+> else
+> 
+>         echo "le nombre n'est pas réel"
+> fi
+> 
