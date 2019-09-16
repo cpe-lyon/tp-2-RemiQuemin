@@ -19,14 +19,15 @@ La variable `echo $_` affiche la derniere commande exécutée.
 
 #### 4. Créez une variable locale MY_VAR (le contenu n’a pas d’importance). Vérifiez que la variable existe.
 Tout d'abord je crée ma variable `MY_VAR="TEST"` puis `echo "MY_VAR"`.
-#### 5. Tapez ensuite la commande bash. Que fait-elle ? La variable MY_VAR existe-t-elle ? Expliquez. A la fin
-de cette question, tapez la commande exit pour revenir dans votre session initiale.
+
+#### 5. Tapez ensuite la commande bash. Que fait-elle ? La variable MY_VAR existe-t-elle ? Expliquez. A la fin de cette question, tapez la commande exit pour revenir dans votre session initiale.
+La commande bash crée une nouvelle session, ainsi la variable créée n'est plus disponible puisque nous sommes plus dans la même session.
 
 #### 6. Transformez MY_VAR en une variable d’environnement et recommencez la question précédente. Expliquez.
+Je transforme MY_VAR en une variable d'environnement `export MY_VAR="TEST"`. Cette fois-ci quand on change de session avec la commande `bash`et `echo $MY_VAR`, on remarque que la commande renvoi le message `TEST`.
 
-#### 7. Créer la variable d’environnement NOMS ayant pour contenu vos noms de binômes séparés par un espace.
-Afficher la valeur de NOMS pour vérifier que l’affectation est correcte.
-
+#### 7. Créer la variable d’environnement NOMS ayant pour contenu vos noms de binômes séparés par un espace. Afficher la valeur de NOMS pour vérifier que l’affectation est correcte.
+Je crée la variable NOMS : `export NOMS="Remi Gaetan"` puis `printenv NOMS`, elle renvoi :  Remi Gaetan
 #### 8. Ecrivez une commande qui affiche ”Bonjour à vous deux, binôme1 binôme2 !” (où binôme1 et binôme2
 sont vos deux noms) en utilisant la variable NOMS.
 
