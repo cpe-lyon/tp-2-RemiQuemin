@@ -27,12 +27,13 @@ La commande bash crée une nouvelle session, ainsi la variable créée n'est plu
 Je transforme MY_VAR en une variable d'environnement `export MY_VAR="TEST"`. Cette fois-ci quand on change de session avec la commande `bash`et `echo $MY_VAR`, on remarque que la commande renvoi le message `TEST`.
 
 #### 7. Créer la variable d’environnement NOMS ayant pour contenu vos noms de binômes séparés par un espace. Afficher la valeur de NOMS pour vérifier que l’affectation est correcte.
-Je crée la variable NOMS : `export NOMS="Remi Gaetan"` puis `printenv NOMS`, elle renvoi :  Remi Gaetan
-#### 8. Ecrivez une commande qui affiche ”Bonjour à vous deux, binôme1 binôme2 !” (où binôme1 et binôme2
-sont vos deux noms) en utilisant la variable NOMS.
+Je crée la variable NOMS : `export NOMS="Remi Gaetan"` puis `printenv NOMS`, elle affiche :  Remi Gaetan
 
-#### 9. Quelle différence y a-t-il entre donner une valeur vide à une variable et l’utilisation de la commande
-unset ?
+#### 8. Ecrivez une commande qui affiche ”Bonjour à vous deux, binôme1 binôme2 !” (où binôme1 et binôme2 sont vos deux noms) en utilisant la variable NOMS.
+La commande : `echo "Bonjour à vous deux, $NOMS"`, nous avons crée juste avant la variable NOMS avec Remi Gaetan, ainsi cette commande retournera : "Bonjour à vous deux Remi Gaetan".
 
-#### 10. Utilisez la commande echo pour écrire exactement la phrase : $HOME = chemin (où chemin est votre
-dossier personnel d’après bash).
+#### 9. Quelle différence y a-t-il entre donner une valeur vide à une variable et l’utilisation de la commande unset ?
+La difference entre donner une valeur vide à une variable et l'utilisation de la commande unset est que dans le premier cas, la variable existe toujours mais la valeur est vide tandis qu'avec la commande unset la variable est supprimée.
+
+#### 10. Utilisez la commande echo pour écrire exactement la phrase : $HOME = chemin (où chemin est votre dossier personnel d’après bash).
+Pour ecrire la commande $HOME = chemin, il va falloir rentrer la commande `echo "\$HOME = $HOME"`.
