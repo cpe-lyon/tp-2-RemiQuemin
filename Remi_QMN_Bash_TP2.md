@@ -4,13 +4,21 @@
 
 
 #### 1. Dans quels dossiers bash trouve-t-il les commandes tapées par l’utilisateur ?
-grace à la commande `printenv`,elle indique à bash où trouver les commandes tapées par l’utilisateur.
+Grace à la commande `printenv`,elle indique à bash où trouver les commandes tapées par l’utilisateur.
+
 #### 2. Quelle variable d’environnement permet à la commande cd tapée sans argument de vous ramener dans votre répertoire personnel ?
+La variable d'environnement qui permet à la commande cd tapée sans argument de nous ranemer dans votre répertoire personnel est : `cd $HOME`.
 
 #### 3. Explicitez le rôle des variables LANG, PWD, OLDPWD, SHELL et _.
+la variable d’environnement `LANG` détermine la langue que les logiciels
+utilisent pour communiquer avec l’utilisateur.
+La variable `PWD` permet d'afficher le chemin du dossier ou du fichier dans lequel on est.
+La variable `OLDPWD` va retourner le chemin de l'ancien dossier dans lequel dans lequel on etait.
+La variable `SHELL` permet d'accéder aux fonctionnalités internes du système d'exploitation.
+La variable `echo $_` affiche la derniere commande exécutée.
 
 #### 4. Créez une variable locale MY_VAR (le contenu n’a pas d’importance). Vérifiez que la variable existe.
-
+Tout d'abord je crée ma variable `MY_VAR="TEST"` puis `echo "MY_VAR"`.
 #### 5. Tapez ensuite la commande bash. Que fait-elle ? La variable MY_VAR existe-t-elle ? Expliquez. A la fin
 de cette question, tapez la commande exit pour revenir dans votre session initiale.
 
