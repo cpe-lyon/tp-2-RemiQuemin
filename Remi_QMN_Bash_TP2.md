@@ -11,7 +11,7 @@ La variable d'environnement qui permet à la commande cd tapée sans argument de
 
 #### 3. Explicitez le rôle des variables LANG, PWD, OLDPWD, SHELL et _.
 la variable d’environnement `LANG` détermine la langue que les logiciels
-utilisent pour communiquer avec l’utilisateur.
+utilisent pour communiquer avec l’utilisateur. <br>
 La variable `PWD` permet d'afficher le chemin du dossier ou du fichier dans lequel on est.  <br>
 La variable `OLDPWD` va retourner le chemin de l'ancien dossier dans lequel dans lequel on etait. <br>
 La variable `SHELL` permet d'accéder aux fonctionnalités internes du système d'exploitation. <br>
