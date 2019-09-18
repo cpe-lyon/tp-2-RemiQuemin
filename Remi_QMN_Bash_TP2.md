@@ -149,7 +149,7 @@ random=$[ ( $RANDOM % 1000 ) +1 ]
 
 
 
-read -p 'Veuillez rentrer votre nombre :' NbAlea
+read -p 'Veuillez rentrer votre nombre compris entre 1 et 1000:' NbAlea
 
 while [ $NbAlea -ne $random ]
 
@@ -164,7 +164,7 @@ read -p "C est moins ! Veuillez rentre un nombre plus petit : " NbAlea
         fi
 done
 
-echo " Bravo vous avez trouvé le chiffre ! "
+echo " Bravo vous avez trouvé le chiffre, c'est $random! "
 ```
 
 ## Exercice 7. Statistiques
