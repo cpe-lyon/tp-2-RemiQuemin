@@ -114,3 +114,65 @@ Voici mon script :
  fi
  
  ```
+## Exercice 5. Factorielle
+#### Écrivez un programme qui calcule la factorielle d’un entier naturel passé en paramètre (on supposera que l’utilisateur saisit toujours un entier naturel).
+
+
+
+```
+#!/bin/bash
+
+
+nb=$1
+
+calcul=1
+
+while [ $nb -ge 1 ]
+
+do
+        calcul=$((nb*$calcul))
+        nb=$((nb-1))
+
+done
+
+echo $calcul
+```
+
+## Exercice 6. Le juste prix
+#### Écrivez un script qui génère un nombre aléatoire entre 1 et 1000 et demande à l’utilisateur de le deviner. Le programme écrira ”C’est plus !”, ”C’est moins !” ou ”Gagné !” selon les cas (vous utiliserez $RANDOM).
+
+``` 
+
+#!/bin/bash
+
+random=$[ ( $RANDOM % 1000 ) +1 ]
+
+
+
+read -p 'Veuillez rentrer votre nombre :' NbAlea
+
+while [ $NbAlea -ne $random ]
+
+do
+
+        if [ $NbAlea -lt $random ]; then
+
+read -p "C est plus ! Veuillez rentrer un nombre plus grand : " NbAlea
+        else
+
+read -p "C est moins ! Veuillez rentre un nombre plus petit : " NbAlea
+        fi
+done
+
+echo " Bravo vous avez trouvé le chiffre ! "
+```
+
+## Exercice 7. Statistiques
+#### 1. Écrivez un script qui prend en paramètres trois entiers (entre -100 et +100) et affiche le min, le max et la moyenne. Vous pouvez réutiliser la fonction de l’exercice 3 pour vous assurer que les paramètres sont bien des entiers. <br>
+#### 2. Généralisez le programme à un nombre quelconque de paramètres (pensez à SHIFT). <br>
+#### 3. Modifiez votre programme pour que les notes ne soient plus données en paramètres, mais saisies et stockées au fur et à mesure dans un tableau. <br>
+
+```
+
+
+```
