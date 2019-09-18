@@ -173,6 +173,64 @@ echo " Bravo vous avez trouvé le chiffre ! "
 #### 3. Modifiez votre programme pour que les notes ne soient plus données en paramètres, mais saisies et stockées au fur et à mesure dans un tableau. <br>
 
 ```
+#!/bin/bash
+
+function reelounon()
+{
+        re='^[+-]?[0-9]+([.][0-9]+)?$'
+        if ! [[ $nb =~ $re ]] ; then
+                return 1
+        else
+                return 0
+        fi
+}
+
+TantQue=1
+nb=0
+i=0
+marks=()
+
+while [ $TantQue != 0 ]
+do
+        echo "Veuillez entrez une note : "
+        read nb
+
+        reelounon $nb
+
+        if [ "$?" != "0" ]; then
+                echo "Merci d'entrer que des réels"
+        else
+                marks[$i]=$nb
+        fi
+
+        echo "Continuer ? o / n"
+        read answer
+
+        if [ "$answer" = "n" ]; then
+                TantQue=0;
+        fi
+
+        ((i++))
+done
+
+Minimum=${marks[0]}
+Maximum=${marks[0]}
+Moyenne=0
+LongueurTableau=${#marks[@]}
+
+for mark in "${marks[@]}"
+do
+        if [[ $mark < $Maximum ]]; then
+                Minimum=$mark
+        fi
+        if [[ $mark > $Minimum ]]; then
+                Maximum=$mark
+        fi
+        ((Moyenne=Moyenne+mark))
+done
+
+Moyenne=$((Moyenne / LongueurTableau))
+echo "Le maximum est $Maximum, le minimum est $Minimum et la moyenne est de $Moyenne."
 
 
 ```
