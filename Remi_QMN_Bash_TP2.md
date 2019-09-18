@@ -12,10 +12,10 @@ La variable d'environnement qui permet à la commande cd tapée sans argument de
 #### 3. Explicitez le rôle des variables LANG, PWD, OLDPWD, SHELL et _.
 la variable d’environnement `LANG` détermine la langue que les logiciels
 utilisent pour communiquer avec l’utilisateur.
-La variable `PWD` permet d'afficher le chemin du dossier ou du fichier dans lequel on est.  \n
-La variable `OLDPWD` va retourner le chemin de l'ancien dossier dans lequel dans lequel on etait. \n
-La variable `SHELL` permet d'accéder aux fonctionnalités internes du système d'exploitation. \n
-La variable `echo $_` affiche la derniere commande exécutée. \n
+La variable `PWD` permet d'afficher le chemin du dossier ou du fichier dans lequel on est.  <br>
+La variable `OLDPWD` va retourner le chemin de l'ancien dossier dans lequel dans lequel on etait. <br>
+La variable `SHELL` permet d'accéder aux fonctionnalités internes du système d'exploitation. <br>
+La variable `echo $_` affiche la derniere commande exécutée. <br>
 
 #### 4. Créez une variable locale MY_VAR (le contenu n’a pas d’importance). Vérifiez que la variable existe.
 Tout d'abord je crée ma variable `MY_VAR="TEST"` puis `echo "MY_VAR"`.
